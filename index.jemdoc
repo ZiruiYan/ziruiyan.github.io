@@ -8,19 +8,19 @@ PhD student\n
 [http://https://www.rpi.edu Rensselaer Polytechnic institute]\n
 Email: yanz11@rpi.edu/ziruiy1808@gmail.com\n
 Tel: \+1-5189612312 \n
+[cv_en.pdf Curriculum Vitae]\n
 ~~~
 
 == About me
-I am a first year PhD student in [https://www.ecse.rpi.edu Electrical, Computer, and System Engineering Department] at [http://https://www.rpi.edu Rensselaer Polytechnic Institute], working under the supervision of [https://www.ecse.rpi.edu/~tajer Prof. Ali Tajer]. Before that, I graduated from University of Science and Technology of China.\n
-For more information about me, please see my [cv_en.pdf Curriculum Vitae].
+I am Ph.D. student in [https://www.ecse.rpi.edu Electrical, Computer, and System Engineering Department] at [http://https://www.rpi.edu Rensselaer Polytechnic Institute], working under the supervision of [https://www.ecse.rpi.edu/~tajer Prof. Ali Tajer]. Before that, I graduated from University of Science and Technology of China.\n
 
 == Education
 - [http://https://www.rpi.edu Rensselaer Polytechnic institute]\n
-Ph.D in Computer & System Engineering, 2021.08-present
+Ph.D in Computer & System Engineering, 2021.08-present\n
 Advisor: [https://www.ecse.rpi.edu/~tajer Prof. Ali Tajer]
 - [http://en.ustc.edu.cn University of Science and Technology of China]\n 
 B.Sc. Statistics, 2016.09-2020.05\n
-B.Eng. Computer Science and [http://en.ustc.edu.cn Technology, University of Science and Technology of China] 2018.02-2020.05
+B.Eng. Computer Science and Technology, 2018.02-2020.05
 
 == Research
 My research interests include: 
@@ -29,9 +29,12 @@ My research interests include:
 
 
 == Publications
-Image denoising via K-SVD with primal-dual active set algorithm\n
+- Image denoising via K-SVD with primal-dual active set algorithm\n
 Quan Xiao, Canhong Wen, Zirui Yan\n
 Published in WACV 2020, IEEE
+- Federated Multi-armed Bandit via Uncoordinated Exploration\n
+Zirui Yan, Quan Xiao, Tianyi Chen, Ali Tajer\n
+To be appear in ICASSP 2022
 
 == Web Information
-add self
+To be added later.
