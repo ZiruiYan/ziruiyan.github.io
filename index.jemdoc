@@ -24,17 +24,20 @@ B.Eng. Computer Science and Technology, 2018.02-2020.05
 
 == Research
 My research interests include: 
-- Statistical Learning
 - Machine Learning
+- Statistical Learning
+- Machine Learning interpretability
 
 
 == Publications
-- Image denoising via K-SVD with primal-dual active set algorithm\n
-Quan Xiao, Canhong Wen, Zirui Yan\n
-Published in WACV 2020, IEEE
 - Federated Multi-armed Bandit via Uncoordinated Exploration\n
-Zirui Yan, Quan Xiao, Tianyi Chen, Ali Tajer\n
+*Zirui Yan*, Quan Xiao, Tianyi Chen, Ali Tajer\n
 To be appear in ICASSP 2022
+
+- Image denoising via K-SVD with primal-dual active set algorithm\n
+Quan Xiao, Canhong Wen, *Zirui Yan*\n
+In Proceedings of WACV 2020, IEEE
+
 
 == Web Information
 To be added later.
