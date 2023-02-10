@@ -3,7 +3,7 @@
 
 ~~~
 {}{img_left}{photos/person.jpg}{alt text}{160}{160}{*Personal Information:*\n http://ziruiyan.github.io/}
-PhD student\n
+Second year PhD student\n
 [https://www.ecse.rpi.edu Department of Electrical, Computer and Systems Engineering]\n 
 [http://https://www.rpi.edu Rensselaer Polytechnic institute]\n
 Email: yanz11@rpi.edu/ziruiy1808@gmail.com\n
@@ -24,9 +24,8 @@ B.Eng. Computer Science and Technology, 2018.02-2020.05
 
 == Research
 My research interests include: 
-- Machine Learning
-- Statistical Learning
-- Machine Learning interpretability
+- Multi-armed bandit
+- Trustworthy machine learning (robustness, interpretability)
 
 
 == Publications
@@ -37,7 +36,3 @@ To be appear in ICASSP 2022
 - Image denoising via K-SVD with primal-dual active set algorithm\n
 Quan Xiao, Canhong Wen, *Zirui Yan*\n
 In Proceedings of WACV 2020, IEEE
-
-
-== Web Information
-To be added later.
