@@ -1,0 +1,15 @@
+# jemdoc: menu{MENU}{index.html}, nofooter  
+== Publications
+
+- Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning\n
+Xuezheng Liu , *Zirui Yan* , Yipeng Zhou , Di Wu , Xu Chen , Jessie Hui Wang\n 
+To be appear on IEEE/ACM Transactions on Networking 
+
+- [https://ieeexplore.ieee.org/iel7/9745891/9746004/09747833.pdf Federated Multi-armed Bandit via Uncoordinated Exploration]\n
+*Zirui Yan*, Quan Xiao, Tianyi Chen, Ali Tajer\n
+In Proceedings of IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2022
+
+- [https://openaccess.thecvf.com/content_WACV_2020/papers/Xiao_Image_denoising_via_K-SVD_with_primal-dual_active_set_algorithm_WACV_2020_paper.pdf Image denoising via K-SVD with primal-dual active set algorithm]\n
+Quan Xiao, Canhong Wen, *Zirui Yan*\n
+In Proceedings of IEEE Winter Conference on Applications of Computer Vision (WACV) 2020
+

@@ -25,14 +25,10 @@ B.Eng. Computer Science and Technology, 2018.02-2020.05
 == Research
 My research interests include: 
 - Multi-armed bandit
+- Causal inference
 - Trustworthy machine learning (robustness, interpretability)
 
 
-== Publications
-- Federated Multi-armed Bandit via Uncoordinated Exploration\n
-*Zirui Yan*, Quan Xiao, Tianyi Chen, Ali Tajer\n
-To be appear in ICASSP 2022
-
-- Image denoising via K-SVD with primal-dual active set algorithm\n
-Quan Xiao, Canhong Wen, *Zirui Yan*\n
-In Proceedings of WACV 2020, IEEE
+== News
+- I will be an internship at IBM Thomas J. Watson Research Center this summer
+- Our paper "Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning" was accepted by IEEE/ACM Transactions on Networking 
