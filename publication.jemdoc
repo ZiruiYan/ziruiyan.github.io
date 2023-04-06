@@ -1,7 +1,7 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
 == Publications
 
-- Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning\n
+- [https://ieeexplore.ieee.org/abstract/document/10082940 Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning]\n
 Xuezheng Liu\* , *Zirui Yan*\* , Yipeng Zhou , Di Wu , Xu Chen , Jessie Hui Wang (\* equal contributor)\n 
 To be appear on IEEE/ACM Transactions on Networking 
 
