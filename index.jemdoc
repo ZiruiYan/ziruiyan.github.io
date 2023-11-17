@@ -3,7 +3,7 @@
 
 ~~~
 {}{img_left}{photos/person.jpg}{alt text}{160}{160}{*Personal Information:*\n http://ziruiyan.github.io/}
-Second year PhD student\n
+PhD student\n
 [https://www.ecse.rpi.edu Department of Electrical, Computer and Systems Engineering]\n 
 [http://https://www.rpi.edu Rensselaer Polytechnic institute]\n
 Email: yanz11@rpi.edu/ziruiy1808@gmail.com\n
@@ -23,12 +23,10 @@ B.Sc. Statistics, 2016.09-2020.05\n
 B.Eng. Computer Science and Technology, 2018.02-2020.05
 
 == Research
-My research interests include: 
-- Multi-armed bandit
-- Causal inference
-- Trustworthy machine learning (robustness, interpretability)
+My primary research topic is causal bandit
 
 
 == News
+- Our paper "Robust Causal Bandits for Linear Models" is now on arxiv.
 - I will be an intern at IBM Thomas J. Watson Research Center this summer
 - Our paper "Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning" was accepted by IEEE/ACM Transactions on Networking 
