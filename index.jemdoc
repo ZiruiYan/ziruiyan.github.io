@@ -23,10 +23,10 @@ B.Sc. Statistics, 2016.09-2020.05\n
 B.Eng. Computer Science and Technology, 2018.02-2020.05
 
 == Research
-My primary research topic is causal bandit
+My current research topic is *causal bandit* and the *causality in Large Language models (LLM)*. I also have broad interests in the application of bandit in *federated learning*.
 
 
 == News
-- Our paper "Robust Causal Bandits for Linear Models" is now on arxiv.
-- I will be an intern at IBM Thomas J. Watson Research Center this summer
-- Our paper "Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning" was accepted by IEEE/ACM Transactions on Networking 
+- 11/2023: Our paper "Robust Causal Bandits for Linear Models" is now on arxiv.
+- 08/2023: Finished a three-month internship at IBM Thomas J. Watson Research Center.
+- 03/2023: Our paper "Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning" was accepted by IEEE/ACM Transactions on Networking 
