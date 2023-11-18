@@ -1,5 +1,7 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
-==Visiting experience
+== Experience
+
+== Visiting experience
 
 - School of Computer Science and Engineering, Sun Yat-Sen University
 -- Host: [http://netlabsysu.org/dwu/ Prof. Di Wu], January 2021 - August 2021
@@ -14,3 +16,6 @@
 - [https://rsvp.ai/en/ RSVP.ai]\n
 -- Data Editor of knowledge graph, July 18 - August 18 \n
 
+== Reviewer experience
+- ICML 2023 Workshop on Structured Probabilistic Inference & Generative Modeling (SPIGM)
+- Artificial Intelligence and Statistics Conference (AISTATS) 2024
