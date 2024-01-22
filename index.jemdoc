@@ -12,7 +12,7 @@ Tel: \+1-5189612312 \n
 ~~~
 
 == About me
-I am Ph.D. student in [https://www.ecse.rpi.edu Electrical, Computer, and System Engineering Department] at [http://https://www.rpi.edu Rensselaer Polytechnic Institute], working under the supervision of [https://www.ecse.rpi.edu/~tajer Prof. Ali Tajer]. Before that, I graduated from University of Science and Technology of China.\n
+I am Ph.D. student in [https://www.ecse.rpi.edu Electrical, Computer, and System Engineering Department] at [http://https://www.rpi.edu Rensselaer Polytechnic Institute (RPI)], working under the supervision of [https://www.ecse.rpi.edu/~tajer Prof. Ali Tajer]. Before that, I graduated from University of Science and Technology of China.\n
 
 == Research
 My current research topic is *causal bandit* (see [https://github.com/ZiruiYan/awesome-causal-bandit github repo] for brief summary) and the *causality in Large Language models (LLM)*. I also have broad interests in the application of bandit in *federated learning*.
@@ -27,7 +27,8 @@ B.Eng. Computer Science and Technology, 2018.02-2020.05
 
 
 == News
+- 01/2023: Our paper "Nonlinear Causal Bandits: General Causal Models and Interventions" will be appear in AISTATS 2024.
 - 12/2023: I served as volunteer at NeurIPS 2023.
-- 11/2023: Our paper "Robust Causal Bandits for Linear Models" is now on arxiv.
+- 11/2023: Our paper "Robust Causal Bandits for Linear Models" is now on arXiv.
 - 08/2023: Finished a three-month internship at IBM Thomas J. Watson Research Center.
 - 03\/2023: Our paper "Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning" was accepted by IEEE/ACM Transactions on Networking.

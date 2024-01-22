@@ -1,12 +1,11 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
 == Publications
 
-== Preprints
-
-- [https://arxiv.org/pdf/2310.19794 Robust Causal Bandits for Linear Models]\n
-*Zirui Yan*, Arpan Mukherjee, Burak Varıcı, Ali Tajer
-
 == Journal and Conference papers
+
+- Nonlinear Causal Bandits: General Causal Models and Interventions \n
+Zirui Yan, Ali Tajer, Dennis Wei, Dmitriy Katz-Rogozhnikov, Prasanna Sattigeri \n
+To be appear on International Conference on Artificial Intelligence and Statistics (AISTATS), 2024
 
 - [https://ieeexplore.ieee.org/abstract/document/10082940 Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning]\n
 Xuezheng Liu\* , *Zirui Yan*\* , Yipeng Zhou , Di Wu , Xu Chen , Jessie Hui Wang (\* equal contributor)\n 
@@ -19,4 +18,9 @@ In Proceedings of IEEE International Conference on Acoustics, Speech, and Signal
 - [https://openaccess.thecvf.com/content_WACV_2020/papers/Xiao_Image_denoising_via_K-SVD_with_primal-dual_active_set_algorithm_WACV_2020_paper.pdf Image denoising via K-SVD with primal-dual active set algorithm]\n
 Quan Xiao, Canhong Wen, *Zirui Yan*\n
 In Proceedings of IEEE Winter Conference on Applications of Computer Vision (WACV)， 2020
+
+== Preprints
+
+- [https://arxiv.org/pdf/2310.19794 Robust Causal Bandits for Linear Models]\n
+*Zirui Yan*, Arpan Mukherjee, Burak Varıcı, Ali Tajer
 
