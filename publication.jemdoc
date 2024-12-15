@@ -1,0 +1,32 @@
+# jemdoc: menu{MENU}{index.html}, nofooter  
+== Publications
+
+== Journal and Conference papers
+- Linear Causal Bandits: Unknown Graph and Soft Interventions \n
+*Zirui Yan*, Ali Tajer \n
+**To be appear** In Proceedings of Annual Conference on Neural Information Processing Systems (NeurIPS 2024)
+
+- [https://ieeexplore.ieee.org/document/10619195 Improved Bound for Robust Causal Bandits with Linear Models] \n
+*Zirui Yan*, Arpan Mukherjee, Burak Varıcı, Ali Tajer \n
+In Proceedings of IEEE International Symposium on Information Theory (ISIT), 2024 
+
+- [https://proceedings.mlr.press/v238/yan24a.html Causal Bandits with General Causal Models and Interventions] \n
+*Zirui Yan*, Dennis Wei, Dmitriy Katz-Rogozhnikov, Prasanna Sattigeri, Ali Tajer \n
+In Proceedings of International Conference on Artificial Intelligence and Statistics (AISTATS), 2024
+
+- [https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8700143 Robust Causal Bandits for Linear Models]\n
+*Zirui Yan*, Arpan Mukherjee, Burak Varıcı, Ali Tajer \n
+IEEE Journal on Selected Areas in Information Theory (JSAIT), 2024
+
+- [https://ieeexplore.ieee.org/abstract/document/10082940 Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning]\n
+Xuezheng Liu\* , *Zirui Yan*\* , Yipeng Zhou , Di Wu , Xu Chen , Jessie Hui Wang (\* equal contributor)\n 
+IEEE/ACM Trans. on Networking (TON), 2023
+
+- [https://ieeexplore.ieee.org/iel7/9745891/9746004/09747833.pdf Federated Multi-armed Bandit via Uncoordinated Exploration]\n
+*Zirui Yan*, Quan Xiao, Tianyi Chen, Ali Tajer\n
+In Proceedings of IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)， 2022
+
+- [https://openaccess.thecvf.com/content_WACV_2020/papers/Xiao_Image_denoising_via_K-SVD_with_primal-dual_active_set_algorithm_WACV_2020_paper.pdf Image denoising via K-SVD with primal-dual active set algorithm]\n
+Quan Xiao, Canhong Wen, *Zirui Yan*\n
+In Proceedings of IEEE Winter Conference on Applications of Computer Vision (WACV)， 2020
+
