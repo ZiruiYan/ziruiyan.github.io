@@ -1,0 +1,56 @@
+papers:
+
+  - title: "Linear Causal Bandits: Unknown Graph and Soft Interventions"
+    authors: " <strong><u>Zirui Yan</strong></u>, Ali Tajer"
+    venue: "Proc. Neural Information Processing Systems <strong>(NeurIPS) 2024</strong>"
+    paper_pdf: "https://arxiv.org/pdf/2411.02383"
+    selected: y
+    label: "NeurIPS"
+
+  - title: "Improved Bound for Robust Causal Bandits with Linear Models"
+    authors: "<strong><u>Zirui Yan</strong></u>, Arpan Mukherjee, Burak Varıcı, Ali Tajer"
+    venue: "Proc. IEEE International Symposium on Information Theory <strong>(ISIT) 2024</strong>"
+    paper_pdf: "https://ieeexplore.ieee.org/document/10619195"
+    selected: y
+    label: "ISIT"
+
+  - title: "Causal Bandits with General Causal Models and Interventions"
+    authors: "<strong><u>Zirui Yan</strong></u>, Dennis Wei, Dmitriy Katz-Rogozhnikov, Prasanna Sattigeri, Ali Tajer"
+    venue: "Proc. International Conference on Artificial Intelligence and Statistics <strong>(AISTATS)</strong>, 2024"
+    paper_pdf: "https://proceedings.mlr.press/v238/yan24a.html"
+    selected: y
+    label: "AISTATS"
+
+  - title: "Robust Causal Bandits for Linear Models"
+    authors: "<strong><u>Zirui Yan</strong></u>, Arpan Mukherjee, Burak Varıcı, Ali Tajer"
+    venue: "IEEE Journal on Selected Areas in Information Theory <strong>(JSAIT)</strong>, 2024"
+    paper_pdf: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8700143"
+    selected: y
+    label: "JSAIT"
+
+  - title: "Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning"
+    authors: "Xuezheng Liu*, <strong><u>Zirui Yan*</strong></u>, Yipeng Zhou , Di Wu , Xu Chen , Jessie Hui Wang (* equal contributor)"
+    venue: "IEEE/ACM Trans. on Networking <strong>(TON)</strong>, 2023"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/100829407"
+    selected: y
+    label: "TON"
+
+  - title: "Federated Multi-armed Bandit via Uncoordinated Exploration"
+    authors: "<strong><u>Zirui Yan</strong></u>, Quan Xiao, Tianyi Chen, Ali Tajer"
+    venue: "Proceedings of IEEE International Conference on Acoustics, Speech, and Signal Processing <strong>(ICASSP)， 2022</strong>"
+    paper_pdf: "https://ieeexplore.ieee.org/iel7/9745891/9746004/09747833.pdf"
+    selected: y
+    label: "ICASSP"
+
+  - title: "Image denoising via K-SVD with primal-dual active set algorithm"
+    authors: "Quan Xiao, Canhong Wen, <strong><u>Zirui Yan</strong></u>"
+    venue: "Proc. Winter Conference on Applications of Computer Vision <strong>(WACV), 2020</strong>"
+    paper_pdf: "https://openaccess.thecvf.com/content_WACV_2020/papers/Xiao_Image_denoising_via_K-SVD_with_primal-dual_active_set_algorithm_WACV_2020_paper.pdf"
+    selected: y
+    label: "WACV"
+
+
+
+
+
+

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
+  <meta name="description" content="Homepage for Quan Xiao, Information Science Professor at Cornell Tech.">
+  <meta name="author" content="Quan">
+  <meta property="og:title" content="Quan Xiao | Home" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jenniferquanxiao.github.io/award.html" />
+  <meta property="og:site_name" content="Quan Xiao" />
+  <link rel="canonical" href="https://jenniferquanxiao.github.io/award.html" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <!--
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+   -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
+
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
+
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+  <link rel="stylesheet" href={{ "/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" | prepend: site.baseurl }}>
+   -->
+
+  <link rel="stylesheet" href={{ "/libs/external/fontawesome-free-6.6.0-web/css/all.min.css" | prepend: site.baseurl }}>
+
+  <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/academicons-1.8.6/css/academicons.min.css" | prepend: site.baseurl }}>
+
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/skeleton_tabs/skeleton-tabs.css" | prepend: site.baseurl }}>
+  <script src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend: site.baseurl }}></script>
+
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/timeline.css" | prepend: site.baseurl }}>
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
+  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href={{ "/libs/favicon.png" | prepend: site.baseurl }}>
+  <link rel="shortcut icon" type="image/png" href={{ "/libs/favicon.png" | prepend: site.baseurl }}>
+
+  <!-- Mastodon Linkback
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {% if site.data.main_info.mastodon %}
+  <link href="{{ site.data.main_info.mastodon }}" rel="me">
+  {% endif %} 
+  
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
+        </div>
+        <div class="eight columns main-description">
+            <h3 style="margin-bottom:10px">{{ site.data.main_info.name }}</h3>
+            <p>{{ site.data.main_info.title }}</p>
+            <p style="margin-top:10px;">{{ site.data.main_info.email }}</p>
+            <p>{{ site.data.main_info.address }}</p>
+            <p class="social-icons">
+              {% if site.data.main_info.bsky %}
+	      <span onclick="window.open('{{ site.data.main_info.bsky }}')" style="cursor: pointer">
+                <i class="fa-brands fa-bluesky" style="padding-top: 15px"></i>
+              </span>
+              {% endif %}
+
+              {% if site.data.main_info.threads %}
+              <span onclick="window.open('{{ site.data.main_info.threads }}')" style="cursor: pointer">
+                <i class="fa-brands fa-threads fa-lg"></i>
+              </span>
+              {% endif %}
+
+              {% if site.data.main_info.google_scholar %}              
+              <span title="Google Scholar" onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
+                <i class="ai ai-google-scholar ai-lg"></i>
+              </span>
+              {% endif %}
+
+
+              {% if site.data.main_info.github %}
+              <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
+                <i title="GitHub" class="fa-brands fa-github fa-lg"></i>
+              </span>
+              {% endif %}
+
+              {% if site.data.main_info.twitter %}
+              <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+                <i title="Twitter" class="fa-brands fa-twitter fa-lg"></i>
+              </span>
+              {% endif %}
+
+
+              {% if site.data.main_info.linkedin %}
+              <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+                <i title="LinkedIn" class="fa-brands fa-linkedin fa-lg"></i>
+              </span>
+              {% endif %}
+              
+              {% if site.data.main_info.cv %}
+              <span onclick="window.open('{{ site.data.main_info.cv }}')" style="cursor:pointer">
+                <i title="cv" class="fa-regular fa-file-lines fa-lg"></i>
+              </span>
+              {% endif %}
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
+          <!--
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#prospective-students" | prepend: site.baseurl }}>Prospective Students</a></li>
+          
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#news" | prepend: site.baseurl }}>News</a></li>
+          -->
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#experience" | prepend: site.baseurl }}>Experience</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
+          <!--
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#Award" | prepend: site.baseurl }}>Award</a></li>
+          
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#lab" | prepend: site.baseurl }}>Lab</a></li>
+          -->
+        </ul>
+      </div>
+    </nav>
+
+    {{ content}}
+    <div class="footer">
+          This website is based on a template by 
+    <a href="https://faculty.washington.edu/msaveski/" target="_blank">Martin Saveski</a> and 
+    <a href="https://mmoorr.github.io/www_personal/" target="_blank">Mor Naaman</a> using 
+    <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Improvement ideas were taken from the 
+    <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
+    </div>
+
+<!--     <div class="footer">
+      <div class="row">
+        <div class="four columns">
+          {{ site.data.main_info.name }}
+        </div>
+        <div class="four columns">
+          {{ site.data.main_info.email }}
+        </div>
+        <div class="four columns">
+          {% if site.data.main_info.twitter %}
+          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          {% endif %}
+          {% if site.data.main_info.linkedin %}
+          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          {% endif %}
+          {% if site.data.main_info.github %}
+          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+          {% endif %}
+          {% if site.data.main_info.google_scholar %}
+          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
+            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+          </span>
+          {% endif %}
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+
+  <!-- Google Analytics -->
+  {% include google_analytics.html %}
+
+  <!-- do not remove -->
+  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
