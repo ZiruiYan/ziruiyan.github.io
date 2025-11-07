@@ -1,4 +1,11 @@
 papers:
+  - title: "Reward-oriented Causal Representation Learning"
+    authors: " <strong><u>Zirui Yan*</strong></u>, Emre Acartürk*, Ali Tajer"
+    venue: "Proc. Neural Information Processing Systems <strong>(NeurIPS)</strong>"
+    year: "2025"
+    paper_pdf: "https://openreview.net/pdf?id=I1hgynwxGZ"
+    selected: y
+    label: "NeurIPS"
 
   - title: "Linear Causal Bandits: Unknown Graph and Soft Interventions"
     authors: " <strong><u>Zirui Yan</strong></u>, Ali Tajer"
