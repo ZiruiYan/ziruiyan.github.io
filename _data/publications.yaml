@@ -1,6 +1,6 @@
 papers:
   - title: "Reward-oriented Causal Representation Learning"
-    authors: " <strong><u>Zirui Yan*</strong></u>, Emre Acartürk*, Ali Tajer"
+    authors: " <strong><u>Zirui Yan</strong></u>*, Emre Acartürk*, Ali Tajer"
     venue: "Proc. Neural Information Processing Systems <strong>(NeurIPS)</strong>"
     year: "2025"
     paper_pdf: "https://openreview.net/pdf?id=I1hgynwxGZ"
@@ -40,7 +40,7 @@ papers:
     label: "JSAIT"
 
   - title: "Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning"
-    authors: "Xuezheng Liu*, <strong><u>Zirui Yan*</strong></u>, Yipeng Zhou , Di Wu , Xu Chen , Jessie Hui Wang (* equal contributor)"
+    authors: "Xuezheng Liu*, <strong><u>Zirui Yan</strong></u>*, Yipeng Zhou , Di Wu , Xu Chen , Jessie Hui Wang (* equal contributor)"
     venue: "IEEE/ACM Trans. on Networking <strong>(TON)</strong>"
     year: "2023"
     paper_pdf: "https://ieeexplore.ieee.org/abstract/document/100829407"
@@ -49,7 +49,7 @@ papers:
 
   - title: "Federated Multi-armed Bandit via Uncoordinated Exploration"
     authors: "<strong><u>Zirui Yan</strong></u>, Quan Xiao, Tianyi Chen, Ali Tajer"
-    venue: "Proceedings of IEEE International Conference on Acoustics, Speech, and Signal Processing <strong>(ICASSP)/strong>"
+    venue: "Proceedings of IEEE International Conference on Acoustics, Speech, and Signal Processing <strong>(ICASSP)</strong>"
     year: "2022"
     paper_pdf: "https://ieeexplore.ieee.org/iel7/9745891/9746004/09747833.pdf"
     selected: y
