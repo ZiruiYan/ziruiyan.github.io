@@ -1,4 +1,11 @@
 papers:
+  - title: "Multi-component Causal Tracing in Large Language Models"
+    authors: " <strong><u>Zirui Yan</strong></u>*, Dennis Wei, Dmitriy Katz-Rogozhnikov, Prasanna Sattigeri, Ali Tajer"
+    venue: "Proc. Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>"
+    year: "2026"
+    selected: y
+    label: "ACL"
+
   - title: "Reward-oriented Causal Representation Learning"
     authors: " <strong><u>Zirui Yan</strong></u>*, Emre Acartürk*, Ali Tajer"
     venue: "Proc. Neural Information Processing Systems <strong>(NeurIPS)</strong>"
