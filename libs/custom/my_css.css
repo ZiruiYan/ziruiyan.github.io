@@ -102,13 +102,28 @@ h4 {
   border-top: 1px solid #eee;
   padding-top: 2.5rem;
 }
-.publication-page .publication-abstract h2 {
+.publication-page .publication-abstract h2,
+.publication-page .publication-bibtex h2 {
   font-size: 2.4rem;
   letter-spacing: .05rem;
 }
 .publication-page .publication-abstract p {
   font-size: 1.7rem;
   line-height: 1.75;
+}
+.publication-page .publication-abstract mjx-container {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: .2em 0;
+}
+.publication-page .publication-bibtex {
+  scroll-margin-top: 8.5rem;
+  margin-top: 3rem;
+}
+.publication-page .publication-bibtex pre code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 .publication-page .publication-bottom-nav {
   border-top: 1px solid #eee;

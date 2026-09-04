@@ -26,7 +26,7 @@ $(document).ready(function() {
     $popoverLink.on('click', openPopover)
     $document.on('click', closePopover)
     $document.on('click', '.publication-next', openNextPublication)
-    $('a[href^="#"]').on('click', smoothScroll)
+    $document.on('click', 'a[href^="#"]', smoothScroll)
     onScroll()
     prefetchNextPublication()
     buildSnippets();
@@ -86,7 +86,7 @@ $(document).ready(function() {
     var parsedDocument = new DOMParser().parseFromString(html, 'text/html'),
         currentPublication = document.getElementById('publication'),
         nextPublication = parsedDocument.getElementById('publication'),
-        currentNavigation = currentPublication.querySelector('.publication-bottom-nav'),
+        currentNavigation = currentPublication && currentPublication.querySelector('.publication-bottom-nav'),
         nextNavigation = nextPublication && nextPublication.querySelector('.publication-bottom-nav'),
         currentNext = currentNavigation && currentNavigation.querySelector('.publication-next'),
         nextNext = nextNavigation && nextNavigation.querySelector('.publication-next')
@@ -110,6 +110,7 @@ $(document).ready(function() {
     }
 
     currentPublication.replaceWith(nextPublication)
+    typesetPublication(currentPublication)
     syncMetadata(parsedDocument)
     softPublicationNavigation = true
     window.history.pushState({ publication: true }, '', url)
@@ -120,6 +121,23 @@ $(document).ready(function() {
     window.scrollTo(0, Math.max(0, publicationTop - visibleNavHeight - 20))
     onScroll()
     prefetchNextPublication()
+  }
+
+  function typesetPublication(previousPublication) {
+    if (!window.MathJax || !window.MathJax.typesetPromise) {
+      return
+    }
+
+    // Serialize with initial typesetting and any rapid Next paper clicks.
+    window.MathJax.startup.promise = window.MathJax.startup.promise.then(function() {
+      window.MathJax.typesetClear([previousPublication])
+      var abstract = document.querySelector('.publication-abstract')
+      if (abstract) {
+        return window.MathJax.typesetPromise([abstract])
+      }
+    }).catch(function(error) {
+      console.error('Publication math typesetting failed:', error)
+    })
   }
 
   function openNextPublication(e) {
@@ -147,12 +165,15 @@ $(document).ready(function() {
     e.preventDefault();
     $(document).off("scroll");
     var target = this.hash,
-        menu = target;
-    $target = $(target);
+        $target = $(target);
+    if (!$target.length) {
+      return
+    }
+    var visibleNavHeight = $nav.is(':visible') ? $nav.outerHeight() : 0;
     $('html, body').stop().animate({
-        'scrollTop': $target.offset().top-40
+        'scrollTop': Math.max(0, $target.offset().top-visibleNavHeight-20)
     }, 0, 'swing', function () {
-        window.location.hash = target;
+        window.history.replaceState(window.history.state, '', target);
         $(document).on("scroll", onScroll);
     });
   }

@@ -34,12 +34,22 @@ layout: default
     {% if paper.code %}
       <a class="button" href="{{ paper.code }}" target="_blank" rel="noopener">Code</a>
     {% endif %}
+    {% if paper.bibtex %}
+      <a class="button" href="#bibtex">BibTeX</a>
+    {% endif %}
   </div>
 
   <section class="publication-abstract">
     <h2>Abstract</h2>
     <p>{{ paper.abstract }}</p>
   </section>
+
+  {% if paper.bibtex %}
+    <section class="publication-bibtex" id="bibtex">
+      <h2>BibTeX</h2>
+      <pre><code>{{ paper.bibtex | escape }}</code></pre>
+    </section>
+  {% endif %}
 
   <nav class="publication-bottom-nav" aria-label="Publication navigation">
     <a class="button" href="{{ '/index.html#publications' | relative_url }}">&larr; Back to publications</a>
