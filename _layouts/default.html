@@ -14,7 +14,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page_title }}</title>
-  <meta name="description" content="{{ page_description | escape }}">
+  <meta name="description" content="{{ page_description | strip_html | escape }}">
   <meta name="author" content="{{ site.data.main_info.name | escape }}">
   <meta property="og:title" content="{{ page_title | escape }}" />
   <meta property="og:type" content="{% if citation_paper %}article{% else %}website{% endif %}" />
@@ -37,6 +37,13 @@
   {% if citation_paper.citation_pdf_url %}
   <meta name="citation_pdf_url" content="{{ citation_paper.citation_pdf_url | absolute_url }}">
   {% endif %}
+  {% assign citation_fields = "citation_doi,citation_volume,citation_issue,citation_firstpage,citation_lastpage" | split: "," %}
+  {% for field in citation_fields %}
+    {% if citation_paper[field] %}
+  <meta name="{{ field }}" content="{{ citation_paper[field] | escape }}">
+    {% endif %}
+  {% endfor %}
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
   {% endif %}
 
   <!-- Mobile Specific Metas
