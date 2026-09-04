@@ -1,5 +1,5 @@
 # Transcribe abstracts from abstract_source; preserve wording and mathematical notation.
-# BibTeX uses the published record where available, not an inferred publication record.
+# BibTeX follows the author's references.bib style; citation_* retains publisher metadata.
 papers:
   - title: "Causal Bayesian Optimization via Causal Bandits: Open Questions"
     slug: "causal-bayesian-optimization-via-causal-bandits-open-questions"
@@ -30,11 +30,12 @@ papers:
       recent advances in CBs.
     bibtex: |-
       @inproceedings{mukherjee2026causal,
-        title = {Causal {Bayesian} Optimization via Causal Bandits: Open Questions},
-        author = {Mukherjee, Arpan and Yan, Zirui and Tajer, Ali},
-        booktitle = {UAI 2026 Workshop on Causality for Decision Making},
-        year = {2026},
-        url = {https://ziruiyan.github.io/publications/causal-bayesian-optimization-via-causal-bandits-open-questions/}
+        title={Causal {Bayesian} Optimization via Causal Bandits: Open Questions},
+        author={Mukherjee, Arpan and Yan, Zirui and Tajer, Ali},
+        booktitle={Proc. UAI Workshop on Causality for Decision Making},
+        year={2026},
+        month={August},
+        address={Amsterdam, Netherlands}
       }
     selected: y
     label: "UAI CDM"
@@ -74,19 +75,13 @@ papers:
       demonstrate that the proposed method efficiently identifies subsets of the model’s components that have
       a high impact on the target metric, outperforming existing baseline approaches.
     bibtex: |-
-      @inproceedings{yan-etal-2026-multi,
-        title = {Multi-component Causal Tracing in Large Language Models},
-        author = {Yan, Zirui and Wei, Dennis and Katz, Dmitriy A and Sattigeri, Prasanna and Tajer, Ali},
-        editor = {Liakata, Maria and Moreira, Viviane P. and Zhang, Jiajun and Jurgens, David},
-        booktitle = {Proceedings of the 64th Annual Meeting of the {Association for Computational Linguistics} (Volume 1: Long Papers)},
-        month = jul,
-        year = {2026},
-        address = {San Diego, California, United States},
-        publisher = {Association for Computational Linguistics},
-        url = {https://aclanthology.org/2026.acl-long.154/},
-        doi = {10.18653/v1/2026.acl-long.154},
-        pages = {3398--3418},
-        isbn = {979-8-89176-390-6}
+      @inproceedings{yan2026multi,
+        title={Multi-component Causal Tracing in Large Language Models},
+        author={Yan, Zirui and Wei, Dennis and Katz, Dmitriy A and Sattigeri, Prasanna and Tajer, Ali},
+        booktitle={Proc. Annual Meeting of the Association for Computational Linguistics},
+        year={2026},
+        month={July},
+        address={San Diego, CA}
       }
     award:  "Oral"
     selected: y
@@ -131,17 +126,13 @@ papers:
       \(\Omega(d^{\frac{1}{3}}n^{\frac{1}{3}}p^{\frac{2}{3}}T^{\frac{2}{3}} + p\sqrt{T})\),
       in which \(u\) is replaced by \(p\) that counts the number of causal paths in the graph.
     bibtex: |-
-      @inproceedings{NEURIPS2025_3b04bba0,
-        title = {Reward-oriented Causal Representation Learning},
-        author = {Yan, Zirui and Acart\"{u}rk, Emre and Tajer, Ali},
-        booktitle = {Advances in Neural Information Processing Systems},
-        editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
-        volume = {38, Main Conference},
-        pages = {41392--41444},
-        publisher = {Curran Associates, Inc.},
-        year = {2025},
-        doi = {10.52202/085713-1381},
-        url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/3b04bba0f95caacbd9aa9033e2c913c9-Paper-Conference.pdf}
+      @inproceedings{yan2025reward,
+        title={Reward-oriented Causal Representation Learning},
+        author={Yan, Zirui and Acart{\"u}rk, Emre and Tajer, Ali},
+        booktitle={Proc. Advances in Neural Information Processing Systems},
+        year={2025},
+        month={December},
+        address={San Diego, CA}
       }
     selected: y
     label: "NeurIPS"
@@ -182,17 +173,13 @@ papers:
       paper presents a novel way of designing a computationally efficient CB algorithm, addressing a challenge
       that the existing CB algorithms using soft interventions face.
     bibtex: |-
-      @inproceedings{NEURIPS2024_2aba6ec2,
-        title = {Linear Causal Bandits: Unknown Graph and Soft Interventions},
-        author = {Yan, Zirui and Tajer, Ali},
-        booktitle = {Advances in Neural Information Processing Systems},
-        editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
-        volume = {37},
-        pages = {23939--23987},
-        publisher = {Curran Associates, Inc.},
-        year = {2024},
-        doi = {10.52202/079017-0755},
-        url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/2aba6ec20299931d46ddeefd5ddcb442-Paper-Conference.pdf}
+      @inproceedings{yan2024linear,
+        title={Linear Causal Bandits: Unknown Graph and Soft Interventions},
+        author={Yan, Zirui and Tajer, Ali},
+        booktitle={Proc. Advances in Neural Information Processing Systems},
+        year={2024},
+        month={December},
+        address={Vancouver, Canada}
       }
     selected: y
     label: "NeurIPS"
@@ -231,14 +218,12 @@ papers:
       regret for a broad range of \(C\).
     bibtex: |-
       @inproceedings{yan2024improved,
-        title = {Improved Bound for Robust Causal Bandits with Linear Models},
-        author = {Yan, Zirui and Mukherjee, Arpan and Var{\i}c{\i}, Burak and Tajer, Ali},
-        booktitle = {2024 IEEE International Symposium on Information Theory (ISIT)},
-        pages = {2074--2079},
-        publisher = {IEEE},
-        year = {2024},
-        doi = {10.1109/ISIT57864.2024.10619195},
-        url = {https://doi.org/10.1109/ISIT57864.2024.10619195}
+        title={Improved Bound for Robust Causal Bandits with Linear Models},
+        author={Yan, Zirui and Mukherjee, Arpan and Varici, Burak and Tajer, Ali},
+        booktitle={Proc. IEEE International Symposium on Information Theory},
+        year={2024},
+        month={July},
+        address={Athens, Greece}
       }
     selected: y
     label: "ISIT"
@@ -282,18 +267,13 @@ papers:
       the length of the longest causal path. The upper bound is further refined for special classes of SCMs
       (neural network, polynomial, and linear), and their corresponding lower bounds are provided.
     bibtex: |-
-      @inproceedings{pmlr-v238-yan24a,
-        title = {Causal Bandits with General Causal Models and Interventions},
-        author = {Yan, Zirui and Wei, Dennis and Katz, Dmitriy A and Sattigeri, Prasanna and Tajer, Ali},
-        booktitle = {Proceedings of The 27th International Conference on Artificial Intelligence and Statistics},
-        editor = {Dasgupta, Sanjoy and Mandt, Stephan and Li, Yingzhen},
-        pages = {4609--4617},
-        volume = {238},
-        series = {Proceedings of Machine Learning Research},
-        publisher = {PMLR},
-        month = {02--04 May},
-        year = {2024},
-        url = {https://proceedings.mlr.press/v238/yan24a.html}
+      @inproceedings{yan2024causal,
+        title={Causal Bandits with General Causal Models and Interventions},
+        author={Yan, Zirui and Wei, Dennis and Katz-Rogozhnikov, Dmitriy and Sattigeri, Prasanna and Tajer, Ali},
+        booktitle={Proc. International Conference on Artificial Intelligence and Statistics},
+        year={2024},
+        month={May},
+        address={Valencia, Spain}
       }
     selected: y
     label: "AISTATS"
@@ -342,14 +322,12 @@ papers:
       \(o(\sqrt{T})\) and maintains sub-linear regret for a broader range of \(C\).
     bibtex: |-
       @article{yan2024robust,
-        title = {Robust Causal Bandits for Linear Models},
-        author = {Yan, Zirui and Mukherjee, Arpan and Var{\i}c{\i}, Burak and Tajer, Ali},
-        journal = {IEEE Journal on Selected Areas in Information Theory},
-        volume = {5},
-        pages = {78--93},
-        year = {2024},
-        doi = {10.1109/JSAIT.2024.3373595},
-        url = {https://doi.org/10.1109/JSAIT.2024.3373595}
+        title={Robust Causal Bandits for Linear Models},
+        author={Yan, Zirui and Mukherjee, Arpan and Varici, Burak and Tajer, Ali},
+        journal={IEEE Journal on Selected Areas in Information Theory},
+        volume={5},
+        pages={78--93},
+        year={2024}
       }
     selected: y
     label: "JSAIT"
@@ -395,15 +373,13 @@ papers:
       Fed-APMA significantly outperform the state-of-the-art baselines.
     bibtex: |-
       @article{liu2023optimizing,
-        title = {Optimizing Parameter Mixing Under Constrained Communications in Parallel Federated Learning},
-        author = {Liu, Xuezheng and Yan, Zirui and Zhou, Yipeng and Wu, Di and Chen, Xu and Wang, Jessie Hui},
-        journal = {IEEE/ACM Transactions on Networking},
-        volume = {31},
-        number = {6},
-        pages = {2640--2652},
-        year = {2023},
-        doi = {10.1109/TNET.2023.3257236},
-        url = {https://doi.org/10.1109/TNET.2023.3257236}
+        title={Optimizing Parameter Mixing Under Constrained Communications in Parallel Federated Learning},
+        author={Liu, Xuezheng and Yan, Zirui and Zhou, Yipeng and Wu, Di and Chen, Xu and Wang, Jessie Hui},
+        journal={IEEE/ACM Transactions on Networking},
+        volume={31},
+        number={6},
+        pages={2640--2652},
+        year={2023}
       }
     selected: y
     label: "TON"
@@ -442,14 +418,12 @@ papers:
       that FedUCB-UE outperforms the state-of-the-art algorithms.
     bibtex: |-
       @inproceedings{yan2022federated,
-        title = {Federated Multi-Armed Bandit Via Uncoordinated Exploration},
-        author = {Yan, Zirui and Xiao, Quan and Chen, Tianyi and Tajer, Ali},
-        booktitle = {ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-        pages = {5248--5252},
-        publisher = {IEEE},
-        year = {2022},
-        doi = {10.1109/ICASSP43922.2022.9747833},
-        url = {https://doi.org/10.1109/ICASSP43922.2022.9747833}
+        title={Federated Multi-Armed Bandit Via Uncoordinated Exploration},
+        author={Yan, Zirui and Xiao, Quan and Chen, Tianyi and Tajer, Ali},
+        booktitle={Proc. IEEE International Conference on Acoustics, Speech and Signal Processing},
+        year={2022},
+        month={May},
+        address={Singapore}
       }
     selected: y
     label: "ICASSP"
@@ -484,14 +458,13 @@ papers:
       Experiments are carried out and demonstrate the comparable denoising performance of our K-SVDp with
       state-of-the-art methods.
     bibtex: |-
-      @inproceedings{Xiao_2020_WACV,
-        title = {Image denoising via {K-SVD} with primal-dual active set algorithm},
-        author = {Xiao, Quan and Wen, Canhong and Yan, Zirui},
-        booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-        pages = {2455--2463},
-        month = mar,
-        year = {2020},
-        url = {https://openaccess.thecvf.com/content_WACV_2020/html/Xiao_Image_denoising_via_K-SVD_with_primal-dual_active_set_algorithm_WACV_2020_paper.html}
+      @inproceedings{xiao2020image,
+        title={Image denoising via {K-SVD} with primal-dual active set algorithm},
+        author={Xiao, Quan and Wen, Canhong and Yan, Zirui},
+        booktitle={Proc. IEEE/CVF Winter Conference on Applications of Computer Vision},
+        year={2020},
+        month={March},
+        address={Snowmass, CO}
       }
     selected: y
     label: "WACV"
