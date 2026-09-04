@@ -1,0 +1,3 @@
+interface:
+  display_name: "Website Push Approval"
+  short_description: "Require approval before every website push"
