@@ -26,7 +26,7 @@ papers:
       surrogate-model complexity. Finally, it identifies open problems in CBO that can be addressed using
       recent advances in CBs.
     selected: y
-    label: "UAI 2026"
+    label: "UAI CDM"
 
   - title: "Multi-component Causal Tracing in Large Language Models"
     slug: "multi-component-causal-tracing-in-large-language-models"
