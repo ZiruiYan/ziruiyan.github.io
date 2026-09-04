@@ -2,29 +2,41 @@
 <html lang="en">
 <head>
 
+  {% if page.paper_slug %}
+    {% assign citation_paper = site.data.publications.papers | where: "slug", page.paper_slug | first %}
+  {% endif %}
   {% assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
-  {% assign page_description = page.description | default: "Homepage of Zirui Yan." %}
+  {% assign page_title = citation_paper.title | default: page.title %}
+  {% assign page_description = citation_paper.abstract | default: page.description | default: "Homepage of Zirui Yan." %}
+  {% assign asset_version = site.time | date: "%s" %}
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
+  <title>{{ site.data.main_info.name }} | {{ page_title }}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <meta name="author" content="{{ site.data.main_info.name | escape }}">
-  <meta property="og:title" content="{{ page.title | escape }}" />
-  <meta property="og:type" content="{% if page.citation_title %}article{% else %}website{% endif %}" />
+  <meta property="og:title" content="{{ page_title | escape }}" />
+  <meta property="og:type" content="{% if citation_paper %}article{% else %}website{% endif %}" />
   <meta property="og:url" content="{{ canonical_url }}" />
   <meta property="og:site_name" content="{{ site.data.main_info.name | escape }}" />
   <link rel="canonical" href="{{ canonical_url }}" />
 
-  {% if page.citation_title %}
-  <meta name="citation_title" content="{{ page.citation_title | escape }}">
-  {% for citation_author in page.citation_authors %}
+  {% if citation_paper %}
+  <meta name="citation_title" content="{{ citation_paper.title | escape }}">
+  {% for citation_author in citation_paper.citation_authors %}
   <meta name="citation_author" content="{{ citation_author | escape }}">
   {% endfor %}
-  <meta name="citation_publication_date" content="{{ page.citation_publication_date | escape }}">
-  <meta name="citation_conference_title" content="{{ page.citation_conference_title | escape }}">
-  <meta name="citation_pdf_url" content="{{ page.citation_pdf_url | escape }}">
+  <meta name="citation_publication_date" content="{{ citation_paper.year | escape }}">
+  {% if citation_paper.citation_conference_title %}
+  <meta name="citation_conference_title" content="{{ citation_paper.citation_conference_title | escape }}">
+  {% endif %}
+  {% if citation_paper.citation_journal_title %}
+  <meta name="citation_journal_title" content="{{ citation_paper.citation_journal_title | escape }}">
+  {% endif %}
+  {% if citation_paper.citation_pdf_url %}
+  <meta name="citation_pdf_url" content="{{ citation_paper.citation_pdf_url | absolute_url }}">
+  {% endif %}
   {% endif %}
 
   <!-- Mobile Specific Metas
@@ -41,7 +53,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
   <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | prepend: site.baseurl }}?v={{ asset_version }}">
 
   <!-- JQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -71,7 +83,7 @@
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
-  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
+  <script src="{{ '/libs/custom/my_js.js' | prepend: site.baseurl }}?v={{ asset_version }}"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -161,7 +173,9 @@
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#news" | prepend: site.baseurl }}>News</a></li>
           -->
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#experience" | prepend: site.baseurl }}>Experience</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#education" | prepend: site.baseurl }}>Education</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#service" | prepend: site.baseurl }}>Service</a></li>
           <!--
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#Award" | prepend: site.baseurl }}>Award</a></li>
           

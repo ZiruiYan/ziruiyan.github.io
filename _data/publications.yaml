@@ -1,87 +1,241 @@
 papers:
   - title: "Causal Bayesian Optimization via Causal Bandits: Open Questions"
+    slug: "causal-bayesian-optimization-via-causal-bandits-open-questions"
     authors: "Arpan Mukherjee, <strong><u>Zirui Yan</strong></u>, Ali Tajer"
+    citation_authors:
+      - "Arpan Mukherjee"
+      - "Zirui Yan"
+      - "Ali Tajer"
     venue: "UAI 2026 Workshop on Causality for Decision Making"
+    citation_conference_title: "UAI 2026 Workshop on Causality for Decision Making"
     year: "2026"
     paper_page: "/publications/causal-bayesian-optimization-via-causal-bandits-open-questions/"
     paper_pdf: "/publications/causal-bayesian-optimization-via-causal-bandits-open-questions/causal-bayesian-optimization-via-causal-bandits-open-questions.pdf"
+    citation_pdf_url: "/publications/causal-bayesian-optimization-via-causal-bandits-open-questions/causal-bayesian-optimization-via-causal-bandits-open-questions.pdf"
+    abstract: >-
+      Causal bandits (CBs) provide a principled approach to the sequential design of interventions
+      (experiments) on causal systems to optimize any desired utility of interest. Implicitly, CB
+      algorithms learn the causal model while performing experiments, to the extent that the model's
+      information is needed for optimizing the desired utility. This paper provides a perspective and
+      framework for viewing and analyzing causal Bayesian optimization (CBO) through the lens of CBs.
+      Despite their distinctions, CBO and CB problems share the same principle: causal structure can be
+      used to share information across interventions and avoid treating actions as independent
+      alternatives. Specifically, this paper first compares the two lines of literature on CBs and CBOs
+      with respect to the roles of graph structures, intervention models, and function-class assumptions,
+      distinguishing graph-theoretic sources of complexity from those arising from posterior
+      surrogate-model complexity. Finally, it identifies open problems in CBO that can be addressed using
+      recent advances in CBs.
     selected: y
     label: "UAI 2026"
 
   - title: "Multi-component Causal Tracing in Large Language Models"
+    slug: "multi-component-causal-tracing-in-large-language-models"
     authors: " <strong><u>Zirui Yan</strong></u>, Dennis Wei, Dmitriy Katz-Rogozhnikov, Prasanna Sattigeri, Ali Tajer"
+    citation_authors:
+      - "Zirui Yan"
+      - "Dennis Wei"
+      - "Dmitriy Katz-Rogozhnikov"
+      - "Prasanna Sattigeri"
+      - "Ali Tajer"
     venue: "Proc. Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>"
+    citation_conference_title: "Annual Meeting of the Association for Computational Linguistics"
     year: "2026"
+    paper_page: "/publications/multi-component-causal-tracing-in-large-language-models/"
     paper_pdf: "https://arxiv.org/pdf/2606.03085"
+    code: "https://github.com/ZiruiYan/multi-component-causal-tracing"
+    abstract: >-
+      This work extends causal tracing in large language models from interventions on individual layers or
+      components to the simultaneous analysis of multiple components. The proposed framework identifies
+      sets of attention heads and multilayer-perceptron neurons that most strongly affect a chosen behavior,
+      including accuracy and fairness. Soft interventions and a continuous reformulation make the otherwise
+      combinatorial search computationally tractable while still producing discrete component selections.
+      Experiments show that the method finds influential component sets more efficiently than baseline
+      approaches.
     award:  "Oral"
     selected: y
     label: "ACL"
 
   - title: "Reward-oriented Causal Representation Learning"
+    slug: "reward-oriented-causal-representation-learning"
     authors: " <strong><u>Zirui Yan</strong></u>*, Emre Acartürk*, Ali Tajer"
+    citation_authors:
+      - "Zirui Yan"
+      - "Emre Acartürk"
+      - "Ali Tajer"
     venue: "Proc. Neural Information Processing Systems <strong>(NeurIPS)</strong>"
+    citation_conference_title: "Neural Information Processing Systems"
     year: "2025"
+    paper_page: "/publications/reward-oriented-causal-representation-learning/"
     paper_pdf: "https://openreview.net/pdf?id=I1hgynwxGZ"
+    code: "https://github.com/ZiruiYan/RO-CRL"
+    abstract: >-
+      Reward-oriented causal representation learning replaces perfect recovery of latent causal variables
+      with a task-dependent objective: learn only the coarsest representation needed to optimize a downstream
+      reward. For linear causal and observation models, the paper develops an adaptive intervention strategy
+      that learns the portions of the latent variables and causal graph needed to identify the best action.
+      The analysis gives finite-sample recovery guarantees together with nearly matching upper and lower
+      regret bounds, clarifying how observation dimension and uncertainty in the graph affect performance.
     selected: y
     label: "NeurIPS"
 
   - title: "Linear Causal Bandits: Unknown Graph and Soft Interventions"
+    slug: "linear-causal-bandits-unknown-graph-and-soft-interventions"
     authors: " <strong><u>Zirui Yan</strong></u>, Ali Tajer"
+    citation_authors:
+      - "Zirui Yan"
+      - "Ali Tajer"
     venue: "Proc. Neural Information Processing Systems <strong>(NeurIPS)</strong>"
+    citation_conference_title: "Neural Information Processing Systems"
     year: "2024"
+    paper_page: "/publications/linear-causal-bandits-unknown-graph-and-soft-interventions/"
     paper_pdf: "https://arxiv.org/pdf/2411.02383"
+    code: "https://github.com/ZiruiYan/Linear-Causal-Bandit-Unknown-Graph"
+    abstract: >-
+      This paper studies linear causal bandits when neither the causal graph nor the stochastic soft-
+      intervention models are known. It establishes upper and minimax lower regret bounds whose dependence
+      separates the effects of the horizon, graph in-degree, causal-path length, intervention power, and
+      graph size. The results show that the influence of graph size diminishes with longer interaction, while
+      path length remains a central source of difficulty. A computationally efficient algorithm is also
+      introduced to address challenges that arise specifically with soft interventions.
     selected: y
     label: "NeurIPS"
 
   - title: "Improved Bound for Robust Causal Bandits with Linear Models"
+    slug: "improved-bound-for-robust-causal-bandits-with-linear-models"
     authors: "<strong><u>Zirui Yan</strong></u>, Arpan Mukherjee, Burak Varıcı, Ali Tajer"
+    citation_authors:
+      - "Zirui Yan"
+      - "Arpan Mukherjee"
+      - "Burak Varıcı"
+      - "Ali Tajer"
     venue: "Proc. IEEE International Symposium on Information Theory <strong>(ISIT)</strong>"
+    citation_conference_title: "IEEE International Symposium on Information Theory"
     year: "2024"
+    paper_page: "/publications/improved-bound-for-robust-causal-bandits-with-linear-models/"
     paper_pdf: "https://ieeexplore.ieee.org/document/10619195"
+    abstract: >-
+      This work analyzes causal bandits with linear structural equation models whose observational and
+      interventional mechanisms may change over time. It proposes a robust intervention-selection algorithm
+      and derives both upper and information-theoretic lower bounds on cumulative regret in terms of graph
+      in-degree, causal-path length, time horizon, and aggregate model deviation. The refined analysis shows
+      near-optimal square-root regret under sufficiently small deviations and sublinear regret across a broad
+      range of nonstationarity.
     selected: y
     label: "ISIT"
 
   - title: "Causal Bandits with General Causal Models and Interventions"
+    slug: "causal-bandits-with-general-causal-models-and-interventions"
     authors: "<strong><u>Zirui Yan</strong></u>, Dennis Wei, Dmitriy Katz-Rogozhnikov, Prasanna Sattigeri, Ali Tajer"
+    citation_authors:
+      - "Zirui Yan"
+      - "Dennis Wei"
+      - "Dmitriy Katz-Rogozhnikov"
+      - "Prasanna Sattigeri"
+      - "Ali Tajer"
     venue: "Proc. International Conference on Artificial Intelligence and Statistics <strong>(AISTATS)</strong>"
+    citation_conference_title: "International Conference on Artificial Intelligence and Statistics"
     year: "2024"
+    paper_page: "/publications/causal-bandits-with-general-causal-models-and-interventions/"
     paper_pdf: "https://proceedings.mlr.press/v238/yan24a.html"
+    code: "https://github.com/ZiruiYan/General-Causal-Bandit"
+    abstract: >-
+      This paper develops causal bandit methods for unknown structural causal models drawn from a general
+      class of Lipschitz functions and for soft interventions with arbitrary granularity. The intervention
+      space may therefore be infinite, extending beyond the atomic hard interventions common in earlier
+      work. General regret upper and lower bounds are expressed through graph structure and complexity
+      measures of the model class, with refinements for neural-network, polynomial, and linear structural
+      causal models.
     selected: y
     label: "AISTATS"
 
   - title: "Robust Causal Bandits for Linear Models"
+    slug: "robust-causal-bandits-for-linear-models"
     authors: "<strong><u>Zirui Yan</strong></u>, Arpan Mukherjee, Burak Varıcı, Ali Tajer"
+    citation_authors:
+      - "Zirui Yan"
+      - "Arpan Mukherjee"
+      - "Burak Varıcı"
+      - "Ali Tajer"
     venue: "IEEE Journal on Selected Areas in Information Theory <strong>(JSAIT)</strong>"
+    citation_journal_title: "IEEE Journal on Selected Areas in Information Theory"
     year: "2024"
+    paper_page: "/publications/robust-causal-bandits-for-linear-models/"
     paper_pdf: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8700143"
+    abstract: >-
+      This paper studies the robustness of causal bandit algorithms when linear causal mechanisms fluctuate
+      over time. It first demonstrates that methods designed for stationary models can suffer linear regret
+      even when deviations occur relatively infrequently. A robust causal-bandit algorithm is then proposed
+      and analyzed through upper and lower regret bounds that depend on graph structure and the total amount
+      of model variation. The guarantees identify regimes in which near-optimal square-root regret and broader
+      sublinear performance remain possible.
     selected: y
     label: "JSAIT"
 
   - title: "Optimizing Parameter Mixing under Constrained Communications in Parallel Federated Learning"
+    slug: "optimizing-parameter-mixing-under-constrained-communications-in-parallel-federated-learning"
     authors: "Xuezheng Liu*, <strong><u>Zirui Yan</strong></u>*, Yipeng Zhou , Di Wu , Xu Chen , Jessie Hui Wang (* equal contributor)"
+    citation_authors:
+      - "Xuezheng Liu"
+      - "Zirui Yan"
+      - "Yipeng Zhou"
+      - "Di Wu"
+      - "Xu Chen"
+      - "Jessie Hui Wang"
     venue: "IEEE/ACM Trans. on Networking <strong>(TON)</strong>"
+    citation_journal_title: "IEEE/ACM Transactions on Networking"
     year: "2023"
+    paper_page: "/publications/optimizing-parameter-mixing-under-constrained-communications-in-parallel-federated-learning/"
     paper_pdf: "https://ieeexplore.ieee.org/abstract/document/100829407"
+    abstract: >-
+      This work addresses communication bottlenecks in parallel federated learning systems that distribute
+      clients across multiple parameter servers. Fed-PMA combines local model averaging with parameter mixing
+      among neighboring servers and provides convergence guarantees under constrained communication. The
+      analysis determines how frequently servers should mix parameters as network connectivity and
+      communication costs change. An adaptive extension, Fed-APMA, selects a near-optimal mixing schedule for
+      nonconvex objectives, and experiments show improvements over existing baselines.
     selected: y
     label: "TON"
 
   - title: "Federated Multi-armed Bandit via Uncoordinated Exploration"
+    slug: "federated-multi-armed-bandit-via-uncoordinated-exploration"
     authors: "<strong><u>Zirui Yan</strong></u>, Quan Xiao, Tianyi Chen, Ali Tajer"
+    citation_authors:
+      - "Zirui Yan"
+      - "Quan Xiao"
+      - "Tianyi Chen"
+      - "Ali Tajer"
     venue: "Proceedings of IEEE International Conference on Acoustics, Speech, and Signal Processing <strong>(ICASSP)</strong>"
+    citation_conference_title: "IEEE International Conference on Acoustics, Speech and Signal Processing"
     year: "2022"
+    paper_page: "/publications/federated-multi-armed-bandit-via-uncoordinated-exploration/"
     paper_pdf: "https://ieeexplore.ieee.org/iel7/9745891/9746004/09747833.pdf"
+    abstract: >-
+      This paper studies federated multi-armed bandits, where exploration and exploitation interact with
+      heterogeneous reward distributions across agents. It introduces FedUCB-UE, which lets agents explore
+      suboptimal arms and make personalized choices without coordinating every exploration decision. The
+      resulting diversity complicates the analysis but improves both learning flexibility and empirical
+      behavior. Under mild assumptions, the algorithm achieves logarithmic regret and outperforms prior
+      methods on synthetic experiments.
     selected: y
     label: "ICASSP"
 
   - title: "Image denoising via K-SVD with primal-dual active set algorithm"
+    slug: "image-denoising-via-k-svd-with-primal-dual-active-set-algorithm"
     authors: "Quan Xiao, Canhong Wen, <strong><u>Zirui Yan</strong></u>"
+    citation_authors:
+      - "Quan Xiao"
+      - "Canhong Wen"
+      - "Zirui Yan"
     venue: "Proc. Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>"
+    citation_conference_title: "IEEE/CVF Winter Conference on Applications of Computer Vision"
     year: "2020"
+    paper_page: "/publications/image-denoising-via-k-svd-with-primal-dual-active-set-algorithm/"
     paper_pdf: "https://openaccess.thecvf.com/content_WACV_2020/papers/Xiao_Image_denoising_via_K-SVD_with_primal-dual_active_set_algorithm_WACV_2020_paper.pdf"
+    abstract: >-
+      This work introduces K-SVDP, a K-SVD image-denoising framework that uses a primal-dual active-set method
+      during sparse coding. A selection rule derived from optimality conditions replaces the greedy updates
+      commonly used for the nonconvex sparsity constraint. By iteratively solving an equivalent dual problem
+      with explicit updates, the approach targets both computational efficiency and denoising quality.
+      Experiments demonstrate performance comparable to state-of-the-art denoising methods.
     selected: y
     label: "WACV"
-
-
-
-
-

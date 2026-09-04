@@ -1,0 +1,50 @@
+---
+layout: default
+---
+{% assign paper = site.data.publications.papers | where: "slug", page.paper_slug | first %}
+{% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+{% assign next_paper = nil %}
+{% for publication in selected_papers %}
+  {% if publication.slug == paper.slug %}
+    {% assign next_index = forloop.index0 | plus: 1 %}
+    {% if next_index < selected_papers.size %}
+      {% assign next_paper = selected_papers[next_index] %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<article class="docs-section publication-page" id="publication">
+  <a class="button publication-back" href="{{ '/index.html#publications' | relative_url }}">&larr; Back to publications</a>
+
+  {% if paper.label %}
+    <div><span class="label-badge">{{ paper.label }}</span></div>
+  {% endif %}
+
+  <h1 class="citation_title">{{ paper.title }}</h1>
+  <h3 class="citation_author">{{ paper.authors }}</h3>
+  <p class="publication-venue">
+    <i>{{ paper.venue }}</i>{% if paper.year %}, {{ paper.year }}.{% endif %}
+    {% if paper.award %}<strong>{{ paper.award }}</strong>{% endif %}
+  </p>
+
+  <div class="publication-actions">
+    {% if paper.paper_pdf %}
+      <a class="button" href="{{ paper.paper_pdf }}" target="_blank" rel="noopener">Paper</a>
+    {% endif %}
+    {% if paper.code %}
+      <a class="button" href="{{ paper.code }}" target="_blank" rel="noopener">Code</a>
+    {% endif %}
+  </div>
+
+  <section class="publication-abstract">
+    <h2>Abstract</h2>
+    <p>{{ paper.abstract }}</p>
+  </section>
+
+  <nav class="publication-bottom-nav" aria-label="Publication navigation">
+    <a class="button" href="{{ '/index.html#publications' | relative_url }}">&larr; Back to publications</a>
+    {% if next_paper %}
+      <a class="button publication-next" href="{{ next_paper.paper_page | append: '#publication' | relative_url }}" rel="next" aria-label="Next paper: {{ next_paper.title | escape }}">Next paper &rarr;</a>
+    {% endif %}
+  </nav>
+</article>
