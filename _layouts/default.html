@@ -2,17 +2,30 @@
 <html lang="en">
 <head>
 
+  {% assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
+  {% assign page_description = page.description | default: "Homepage of Zirui Yan." %}
+
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Homepage for Quan Xiao, Information Science Professor at Cornell Tech.">
-  <meta name="author" content="Quan">
-  <meta property="og:title" content="Quan Xiao | Home" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jenniferquanxiao.github.io/award.html" />
-  <meta property="og:site_name" content="Quan Xiao" />
-  <link rel="canonical" href="https://jenniferquanxiao.github.io/award.html" />
+  <meta name="description" content="{{ page_description | escape }}">
+  <meta name="author" content="{{ site.data.main_info.name | escape }}">
+  <meta property="og:title" content="{{ page.title | escape }}" />
+  <meta property="og:type" content="{% if page.citation_title %}article{% else %}website{% endif %}" />
+  <meta property="og:url" content="{{ canonical_url }}" />
+  <meta property="og:site_name" content="{{ site.data.main_info.name | escape }}" />
+  <link rel="canonical" href="{{ canonical_url }}" />
+
+  {% if page.citation_title %}
+  <meta name="citation_title" content="{{ page.citation_title | escape }}">
+  {% for citation_author in page.citation_authors %}
+  <meta name="citation_author" content="{{ citation_author | escape }}">
+  {% endfor %}
+  <meta name="citation_publication_date" content="{{ page.citation_publication_date | escape }}">
+  <meta name="citation_conference_title" content="{{ page.citation_conference_title | escape }}">
+  <meta name="citation_pdf_url" content="{{ page.citation_pdf_url | escape }}">
+  {% endif %}
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -1,4 +1,13 @@
 papers:
+  - title: "Causal Bayesian Optimization via Causal Bandits: Open Questions"
+    authors: "Arpan Mukherjee, <strong><u>Zirui Yan</strong></u>, Ali Tajer"
+    venue: "UAI 2026 Workshop on Causality for Decision Making"
+    year: "2026"
+    paper_page: "/publications/causal-bayesian-optimization-via-causal-bandits-open-questions/"
+    paper_pdf: "/publications/causal-bayesian-optimization-via-causal-bandits-open-questions/causal-bayesian-optimization-via-causal-bandits-open-questions.pdf"
+    selected: y
+    label: "UAI 2026"
+
   - title: "Multi-component Causal Tracing in Large Language Models"
     authors: " <strong><u>Zirui Yan</strong></u>, Dennis Wei, Dmitriy Katz-Rogozhnikov, Prasanna Sattigeri, Ali Tajer"
     venue: "Proc. Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>"
@@ -71,7 +80,6 @@ papers:
     paper_pdf: "https://openaccess.thecvf.com/content_WACV_2020/papers/Xiao_Image_denoising_via_K-SVD_with_primal-dual_active_set_algorithm_WACV_2020_paper.pdf"
     selected: y
     label: "WACV"
-
 
 
 
