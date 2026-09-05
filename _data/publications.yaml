@@ -8,7 +8,7 @@ papers:
       - "Arpan Mukherjee"
       - "Zirui Yan"
       - "Ali Tajer"
-    venue: "UAI 2026 Workshop on Causality for Decision Making"
+    venue: "Proc. Conference on Uncertainty in Artificial Intelligence Workshop on Causality for Decision Making <strong>(UAI CDM)</strong>"
     citation_conference_title: "UAI 2026 Workshop on Causality for Decision Making"
     year: "2026"
     paper_page: "/publications/causal-bayesian-optimization-via-causal-bandits-open-questions/"
