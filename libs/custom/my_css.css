@@ -134,6 +134,32 @@ h4 {
   padding-top: 2.5rem;
 }
 
+.container:has(> .publication-page--compact) > .header,
+.container:has(> .publication-page--compact) > .navbar,
+.container:has(> .publication-page--compact) > .navbar-spacer {
+  display: none;
+}
+.publication-page.publication-page--compact {
+  border-top: 0;
+  padding-top: 2rem;
+  scroll-margin-top: 2rem;
+}
+.publication-page--compact h1 {
+  margin-top: .8rem;
+}
+.publication-page--compact .publication-venue {
+  margin-bottom: 1rem;
+}
+.publication-page--compact .publication-actions {
+  margin-bottom: 0;
+}
+.publication-page--compact .publication-abstract {
+  padding-top: 1.5rem;
+}
+.publication-page--compact .publication-abstract h2 {
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 549px) {
   .publication-page {
     scroll-margin-top: 2rem;

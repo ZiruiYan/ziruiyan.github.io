@@ -13,7 +13,7 @@ layout: default
   {% endif %}
 {% endfor %}
 
-<article class="docs-section publication-page" id="publication">
+<article class="docs-section publication-page{% if page.compact_publication %} publication-page--compact{% endif %}" id="publication">
   <a class="button publication-back" href="{{ '/index.html#publications' | relative_url }}">&larr; Back to publications</a>
 
   {% if paper.label %}
@@ -27,6 +27,7 @@ layout: default
     {% if paper.award %}<strong>{{ paper.award }}</strong>{% endif %}
   </p>
 
+  {% capture publication_actions %}
   <div class="publication-actions">
     {% if paper.paper_pdf %}
       <a class="button" href="{{ paper.paper_pdf }}" target="_blank" rel="noopener">Paper</a>
@@ -38,11 +39,20 @@ layout: default
       <a class="button" href="#bibtex">BibTeX</a>
     {% endif %}
   </div>
+  {% endcapture %}
+
+  {% unless page.compact_publication %}
+    {{ publication_actions }}
+  {% endunless %}
 
   <section class="publication-abstract">
     <h2>Abstract</h2>
     <p>{{ paper.abstract }}</p>
   </section>
+
+  {% if page.compact_publication %}
+    {{ publication_actions }}
+  {% endif %}
 
   {% if paper.bibtex %}
     <section class="publication-bibtex" id="bibtex">
