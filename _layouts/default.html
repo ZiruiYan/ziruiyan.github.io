@@ -161,9 +161,13 @@
               
               {% if site.data.main_info.cv %}
               <span onclick="window.open('{{ site.data.main_info.cv }}')" style="cursor:pointer">
-                <i title="cv" class="fa-regular fa-file-lines fa-lg"></i>
+                <i title="Academic CV (PDF)" class="fa-regular fa-file-lines fa-lg"></i>
               </span>
               {% endif %}
+            </p>
+            <p class="cv-downloads">
+              <a href="{{ site.data.main_info.cv | relative_url }}" target="_blank" rel="noopener">Academic CV (PDF)</a>
+              <a href="{{ site.data.main_info.industry_resume | relative_url }}" download>Industry Resume (Word)</a>
             </p>
         </div>
       </div>
