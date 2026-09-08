@@ -13,12 +13,6 @@ h4 {
   margin-bottom: 0px; }
 .main-description p {
   margin-bottom: 0px; }
-.main-description .cv-downloads {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .4rem 1.5rem;
-  margin-top: 1rem;
-}
 .main-description .fa {
   font-size: 22px;
   margin-top: 5px; }
